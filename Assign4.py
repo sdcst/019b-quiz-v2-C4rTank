@@ -18,3 +18,21 @@ invitations to send.
 This program will require you to incorporate everything we
 have learned so far.
 """
+
+party = []
+
+
+for name in range(10):
+    name = input("Please input name: ")
+    
+    if name in party:
+            party.sort()
+            print("Name's already on the list")
+            party.remove(name)
+    else:
+        party.sort()
+    
+    party = party + [name]
+    print(party)
+
+
